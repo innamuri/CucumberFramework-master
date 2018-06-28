@@ -1,0 +1,14 @@
+ElementName,LocatorType,Locator
+MortgageCalc,url,http://www.mortgagecalculator.org/
+homeValue,name,param[homevalue]
+loanAmount,id,loanamt
+interestRate,id,intrstsrate
+loanTerm,id,loanterm
+startDateMonth,name,param[start_month]
+startDateYear,name,param[start_year]
+propertyTax,id,pptytax
+PMI,id,pmi
+calculate,name,cal
+MonthlyPayment,xpath,//*[@id='calc']/form/section/section[2]/div/div/div[1]/div/div/div[3]/div[2]/div[2]/div[1]/div[1]/h3
+TotalInterestPaid,xpath,//*[@id='calc']/form/section/section[2]/div/div/div[1]/div/div/div[3]/div[2]/div[2]/div[2]/div[1]/h3
+TotalTaxPaid,xpath,//*[@id='calc']/form/section/section[2]/div/div/div[1]/div/div/div[3]/div[2]/div[2]/div[3]/div[1]/h3

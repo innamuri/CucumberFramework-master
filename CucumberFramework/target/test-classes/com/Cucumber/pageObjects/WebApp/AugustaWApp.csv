@@ -1,0 +1,8 @@
+ElementName,LocatorType,Locator
+AugustaWApp,url,http://52.88.75.221/webapp/wcs/stores/servlet/en/asg
+MainSearchField,id,SimpleSearchForm_SearchTerm
+SignInRegisterLink,xpath,//a[@id='Header_GlobalLogin_signInQuickLink']
+EmailIDField,name,logonId
+PasswordField,name,logonPassword
+SignInBtn,xpath,"//span[contains(text(),'Sign In')]"
+ValidateLoginSuccess,xpath,//*[@id='Header_GlobalLogin_signOutQuickLinkUser']

@@ -1,0 +1,1 @@
+cmd.exe appium --nodeconfig C:\Users\user\workspace\CucumberFramework\src\test\java\com\Cucumber\mobileConfig\android\nodeConfigNote2.json -p 4724 --bootstrap-port 4770 --chromedriver-port 4779 --session-override

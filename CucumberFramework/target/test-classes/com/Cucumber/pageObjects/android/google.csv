@@ -1,0 +1,7 @@
+ParameterName,LocatorType,Locator
+google,url,https://www.google.com
+googleSearch,id,lst-ib
+searchBtn,name,btnG
+CucumberResultImage,xpath,//*[@id='uid_7']
+AppiumResult,linktext,Appium: Mobile App Automation Made Awesome.
+CalabashResult,cssselector,#uid_7

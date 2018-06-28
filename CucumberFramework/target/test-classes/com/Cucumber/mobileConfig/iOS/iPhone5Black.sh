@@ -1,0 +1,1 @@
+/Applications/Appium.app/Contents/Resources/node/bin/node /Applications/Appium.app/Contents/Resources/node_modules/appium/bin/appium.js --nodeconfig /Users/sqsbanking/Desktop/MobileAutomation/Framework/CucumberFramework/src/test/java/com/Cucumber/mobileConfig/iOS/nodeConfigiPhone5Black.json -p 4741 --session-override -U 61f507318a63c0a05d47daf0977485ca1407d5a9

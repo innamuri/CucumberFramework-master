@@ -1,0 +1,26 @@
+{
+  "capabilities":
+      [
+        {
+          "browserName": "chrome",
+		  "deviceName": "onePlus5",
+		  "udid": "10.22.175.180:5555",
+          "version":"7.1.1",
+          "maxInstances": 1,
+          "platform":"ANDROID"
+        }
+      ],
+  "configuration":
+  {
+    "cleanUpCycle":2000,
+    "timeout":30000,
+    "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+    "host": "0.0.0.0",
+    "port": 4723,
+    "maxSession": 1,
+    "register": true,
+    "registerCycle": 5000,
+    "hubPort": 4444,
+    "hubHost": "10.22.175.189"
+  }
+}

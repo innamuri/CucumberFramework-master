@@ -1,0 +1,27 @@
+{
+  "capabilities":
+      [
+        {
+          "browserName": "safari",
+		  "deviceName": "iPhone5Black",
+		  "udid": "61f507318a63c0a05d47daf0977485ca1407d5a9",
+          "version": "8.1",
+          "maxInstances": 1,
+          "platform":"iOS"
+        }
+      ],
+  "configuration":
+  {
+    "cleanUpCycle":2000,
+    "timeout":30000,
+    "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+    "url":"http://127.0.0.1:4741/wd/hub",
+    "host": "127.0.0.1",
+    "port": 4741,
+    "maxSession": 1,
+    "register": true,
+    "registerCycle": 5000,
+    "hubPort": 4444,
+    "hubHost": "192.168.1.14"
+  }
+}

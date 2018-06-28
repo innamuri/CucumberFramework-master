@@ -1,0 +1,1 @@
+/Applications/Appium.app/Contents/Resources/node_modules/appium/bin/ios-webkit-debug-proxy-launcher.js -c 61f507318a63c0a05d47daf0977485ca1407d5a9:27753 -d

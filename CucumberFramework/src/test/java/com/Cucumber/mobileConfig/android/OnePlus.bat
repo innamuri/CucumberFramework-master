@@ -1,0 +1,1 @@
+cmd.exe /k appium --nodeconfig C:\Users\user\workspace\CucumberFramework\src\test\java\com\Cucumber\mobileConfig\android\nodeConfigOnePlus.json -p 4723 --bootstrap-port 4764 --chromedriver-port 4775 --session-override

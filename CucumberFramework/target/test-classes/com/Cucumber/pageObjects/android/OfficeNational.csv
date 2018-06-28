@@ -1,0 +1,16 @@
+ObjectName,LocatorType,Locator
+Username,xpath,//android.widget.EditText[@text='Username']
+Password,id,com.officenational.android:id/password
+Log_in,id,com.officenational.android:id/email_sign_in_button
+LoginPageHeader,xpath,//android.widget.TextView[@index='0']
+NavigationDrawer,xpath,//android.widget.ImageButton[@content-desc='Open navigation drawer']
+LogOutBtn,xpath,//android.widget.CheckedTextView[@text='Logout']
+PageHeader,xpath,//android.widget.TextView[@index='1']
+searchField,id,com.officenational.android:id/edtSearch
+AddToCartBtn,xpath,//android.widget.Button[@text='Add To Cart']
+QuantityPopUpHeader,xpath,//android.widget.TextView[@index='0']
+QuantityPopUpOkBtn,id,android:id/button1
+CartBtn,id,com.officenational.android:id/action_cart
+ProductAddedInCart,xpath,//android.widget.TextView[@text='CANON BCI3EBK INK CARTRIDGE BLACK']
+removeItem,xpath,//android.widget.Button[@index='3']
+cartTxnTotal,id,com.officenational.android:id/txtTotal

@@ -1,0 +1,13 @@
+ParameterName,LocatorType,LocatorValue
+HDSupply_ResponsiveSite,url,https://www.Hdsupply.com
+SignInBtn,xpath,//img[@class="_2jpsaC"]
+EmailField,xpath,//input[@placeholder="Email id / Mobile number"]
+PasswordField,xpath,//input[@placeholder="Password"]
+LoginBtn,xpath,//div[contains(text(),'Log in')]
+ResponseMsgHeader,xpath,//td[@data-reactid="33"]
+SearchForProducts,xpath,//input[@placeholder="Search for Products, Brands and More"]
+SearchForProductsPage,id,input-search
+ProductSuggestion,xpath,//a[contains(text(),"lenovo laptops")]
+LenovoG50-80,xpath,//div[contains(text(),"Lenovo G50-80 Core i5")]
+ProductTitle,xpath,//span[@itemprop="itemReviewed"]
+GotIt,xpath,//div[contains(text(),"got it")]

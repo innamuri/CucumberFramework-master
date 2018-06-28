@@ -1,0 +1,71 @@
+ParameterName,LocatorType,Locator,
+Aramark_CIP3,url,https://preqa-portal.ecps.ca/wps/portal/eCPS/,
+CPS_Username,id,usernameInput,
+CPS_Password,id,passwordInput,
+LogInBtn,name,btn_submit,
+userTxtlocation,xpath,"//*[@id=""divfacility""]",
+logoutLink,id,logoutlink,
+CIP3.0_Tab,xpath,//a[contains(text(),CIP 3.0)]
+Plan_Btn,name,plan,
+Enrollment_Btn,name,enrollment,
+Customers_Btn,xpath,//a[contains(text(),Customers)]
+Home_link,linkText,Home,
+HomeBanner,classname,bx-viewport,
+PlanListingCrumb,xpath,//li[contains(text(),Plan Listing)]
+CreatePlan_Btn,xpath,"//button[@ng-click=""pageNavigateToCreate()""]",
+FilterBySection,xpath,//span[contains(text(),Filter by)]
+PlanListingHeader,xpath,//span[contains(text(),Plan Listing)]
+PlanListing_Table,id,listingGrid,
+PlanListing_TableBody,xpath,"//*[@id=""listingGrid""]/tbody[1]",
+RowsPerGrid_TxtField,name,number,
+RowsPerGrid_Btn,id,rpp_btn,
+CreatePlanHeader,xpath,"//span[@ng-bind=""PlanLables.createIncentivePlan""]",
+Cancel_CreatePlan,xpath,"//button[@ng-bind=""PlanLables.btnCancel""]",
+Confirm_Cancel_No_Btn,xpath,"//button[@ng-bind=""PlanLables.hNo""]",
+Confirm_Cancel_Yes_Btn,xpath,"//button[@ng-bind=""PlanLables.hYes""]",
+ExpandAll_Btn,xpath,"//label[@title=""Expand All""]",
+CollapseAll_Btn,xpath,"//label[@title=""Collapse All""]",
+KeywordSearch_Tab,xpath,//span[contains(text(),Keyword Search)]
+KeywordSearch_TxtField,xpath,"//input[@ng-model=""planName.strName""]",
+PlanStatus_Tab,xpath,//span[contains(text(),Plan Status)]
+Published_CheckBox,xpath,"(//label[@for=""checkbox2""])[1]/..//input[@ng-model=""filterPlanStatus[statusP.name]""]",
+Published_Label,xpath,"//label[@for=""checkbox2""]",
+Draft_CheckBox,xpath,"(//label[@for=""checkbox2""])[2]/..//input[@ng-model=""filterPlanStatus[statusP.name]""]",
+Draft_Label,xpath,"(//label[@for=""checkbox2""])[2]",
+Closed_CheckBox,xpath,"(//label[@for=""checkbox2""])[3]/..//input[@ng-model=""filterPlanStatus[statusP.name]""]",
+Closed_Label,xpath,"(//label[@for=""checkbox2""])[3]",
+PendingClose_CheckBox,xpath,"(//label[@for=""checkbox2""])[4]/..//input[@ng-model=""filterPlanStatus[statusP.name]""]",
+PendingClose_Label,xpath,"(//label[@for=""checkbox2""])[4]",
+EnrollmentWindow_Tab,xpath,//span[contains(text(),Enrollment Window)]
+Open_CheckBox,xpath,"(//input[@ng-model=""filterEWindowStatus[eWindow.name]""])[1]",
+Open_Label,xpath,"(//label[@for=""checkbox2""])[5]",
+Close_CheckBox,xpath,"(//input[@ng-model=""filterEWindowStatus[eWindow.name]""])[2]",
+Close_Label,xpath,"(//label[@for=""checkbox2""])[6]",
+firstRow_PlanListingTable,xpath,"//*[@id=""listingGrid""]/tbody[1]/tr[1]/td[1]",
+firstItem_PlanListingTable,xpath,"//*[@id=""listingGrid""]/tbody[1]/tr/td[1]/a/span/span",
+TableSearchResult,xpath,"//*[@id=""listingGrid""]/tbody[2]/tr/td",
+Name_PlanListingTable,xpath,//th[contains(.,Name)]
+Status_PlanListingTable,xpath,//th[contains(.,Status)]
+Enrollment_PlanListingTable,xpath,//th[contains(.,Enrollment)]
+Description_PlanListingTable,xpath,//th[contains(.,Description)]
+Action_PlanListingTable,xpath,//th[contains(.,Action)]
+Name_PL_AscendSort,xpath,"//th[@class=""name-col ng-binding sorting_asc""]",
+Name_PL_DescendSort,xpath,"//th[@class=""name-col ng-binding sorting_desc""]",
+Status_PL_DescendSort,xpath,"//th[@class=""status-col ng-binding sorting_desc""]",
+Status_PL_AscendSort,xpath,"//th[@class=""status-col ng-binding sorting_asc""]",
+Enrollment_PL_DescendSort,xpath,"//th[@class=""enrollment-col ng-binding sorting_desc""]",
+Enrollment_PL_AscendSort,xpath,"//th[@class=""enrollment-col ng-binding sorting_asc""]",
+Description_PL_DescendSort,xpath,"//th[@class=""description-col ng-binding sorting_desc""]",
+Description_PL_AscendSort,xpath,"//th[@class=""description-col ng-binding sorting_asc""]",
+PlanDetail_Header,xpath,"//*[@id=""planDetailTotalGhum""]/div[2]/h2  	 	",
+PL_Edit_Plan,xpath,"//span[@title=""Edit""]",
+PL_Copy_Plan,xpath,"//span[@title=""Copy""]",
+PL_Delete_Plan,xpath,"//span[@title=""Delete""]",
+Delete_Confirmation_Header,xpath,"//h4[@class=""modal-title""]",
+Delete_Yes_Btn,xpath,//button[contains(.,Yes)]
+Delete_No_Btn,xpath,//button[contains(.,No)]
+Pagination_Next,xpath,"//*[@id=""listingGrid""]/tfoot/tr/th/div[3]/ul/li[5]/a",
+Pagination_Previous,xpath,"//*[@id=""listingGrid""]/tfoot/tr/th/div[3]/ul/li[1]/a",
+Copyright_Text,xpath,"//*[@id=""footer""]/div[1]",
+TermsandConditions_Header,xpath,"(//h1[@class=""blue""])[1]",
+PrivacyPolicy_Header,xpath,"(//h1[@class=""blue""])[2]",
