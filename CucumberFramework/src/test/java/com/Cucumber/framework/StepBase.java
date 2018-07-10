@@ -83,6 +83,7 @@ public class StepBase {
 				if(Browser.toLowerCase().equals("chrome"))
 				{
 					System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/test/java/com/Cucumber/resources/chromedriver.exe");
+
 					//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ "/src/test/java/com/QuickAssist/Resources/chromedriver.exe");
 					capabilities= DesiredCapabilities.chrome();
 					capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);

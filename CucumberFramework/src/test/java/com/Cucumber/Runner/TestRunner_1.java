@@ -23,8 +23,10 @@ import cucumber.api.junit.Cucumber;
 		strict = true, 
 		features = { "src/test/java/com/Cucumber/features" }, 
 		glue = { "com.Cucumber.Hooks","com.Cucumber.stepDefinitions" }, 
-		//tags = { "@EMAP_Sanity","~@Ignore"},
-		tags = { "@EditSession","~@Ignore"},
+		tags = { "@BMTC_CT","~@Ignore"},
+		//tags = { "@AddTimeslot,@EditTimeslot,@DeleteTimeslot","~@Ignore"},
+		//tags = { "@EditTimeslot","~@Ignore"},
+		//tags = { "@b1","~@Ignore"},
 		monochrome = false
 		)
 
@@ -78,7 +80,6 @@ public class TestRunner_1{
 	        Reporter.setSystemInfo("OS", Platform);
 	        Reporter.setSystemInfo("Browser", Browser);
 	        Reporter.setTestRunnerOutput("Extent Report for Test Run on Chrome");
-	        
 			if(!System.getProperty("test.DisableCucumberReport").equalsIgnoreCase("true"))
 			{
 		        //Cucumber Report Generation

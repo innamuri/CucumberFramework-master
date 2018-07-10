@@ -12,7 +12,8 @@ public class TestConfig {
 	public static void LoadAllConfig(){
 		try {
 			objConfig = new Properties();
-			objConfig.load(new FileInputStream(	"C:/Users/user/workspace_Labs/CucumberFramework/" + "/src/test/java/com/Cucumber/Config.properties"));
+//			objConfig.load(new FileInputStream(	"C:/Users/taha.patel/git/CucumberFramework-master/CucumberFramework/" + "/src/test/java/com/Cucumber/Config.properties"));
+			objConfig.load(new FileInputStream( System.getProperty("user.dir") + "/src/test/java/com/Cucumber/Config.properties"));
 			objConfig.setProperty("os.name", System.getProperty("os.name"));
 			/*System.setProperty("testPlatform",Platform);
 			System.setProperty("testBrowser",Browser);*/
