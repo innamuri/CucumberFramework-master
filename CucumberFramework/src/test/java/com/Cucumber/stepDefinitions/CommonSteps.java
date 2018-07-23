@@ -7,6 +7,8 @@ import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javax.imageio.ImageIO;
 
@@ -264,6 +266,7 @@ public class CommonSteps {
 		}
 	}
 
+	
 	@Then("^I verify element '(.*)' is disabled$")
 	public static void I_Verify_Element_isDisabled(String element){
 		try{
@@ -684,8 +687,8 @@ public class CommonSteps {
 	public static void I_get_text_from(String element) {
 		try {
 			wrapFunc.waitForElementPresence(GetPageObject.OR_GetElement(element));
-			String value = driver.findElement(GetPageObject.OR_GetElement(element)).getText();
-			HashMapContainer.add("$$"+element, value);
+			String storedValue = driver.findElement(GetPageObject.OR_GetElement(element)).getText();
+			HashMapContainer.add("$$"+element, storedValue);
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -810,9 +813,7 @@ public class CommonSteps {
 	public static void switchTab() throws Exception {
 		try{
 	//		 String winHandleBefore = driver.getWindowHandle();
-
 			    // Perform the click operation that opens new window
-
 		//	    driver.findElement(GetPageObject.OR_GetElement("AvailableJobs_Link")).click();
 		//	    driver.close();
 			    // Switch to new window opened
@@ -840,106 +841,8 @@ public class CommonSteps {
 		try {
 			wrapFunc.waitForElementPresence(GetPageObject.OR_GetElement(element));
 			String value = driver.findElement(GetPageObject.OR_GetElement(element)).getText();
-//			HashMapContainer.add("$$"+element, value);
+			HashMapContainer.add("$$"+element, value);
 			System.out.println("Value: "+value);
-
-		} catch (Exception e) {
-			e.printStackTrace();
-			throw new CucumberException(e.getMessage(), e);
-		}
-	}
-	
-	@Then("I compare '(.*)' with DunsNo '(.*)'$")
-	  public static void i_compare_DUNS_No(String title, String text) throws Exception {
-	   try {
-	    String string = HashMapContainer.get(text);
-	    String string2 = HashMapContainer.get(title);
-	    Assert.assertEquals(string, string2);
-	    System.out.println("DUNS Number is same as current page");
-	   } catch (Exception e) {
-	    // TODO Auto-generated catch block
-	    e.printStackTrace();
-	    throw new Exception("Comparison failed");
-	   }}
-	
-	@Then("^I get count from '(.*)' and print$")
-	public static void I_get_count_from_and_print(String element) {
-		try {
-			Integer counter=1;
-			wrapFunc.waitForElementPresence(GetPageObject.OR_GetElement(element));
-//			WebElement arrow = driver.findElement(GetPageObject.OR_GetElement("NextArrow"));
-			List<WebElement> arrows = driver.findElements(GetPageObject.OR_GetElement("NextArrow"));
-			for(WebElement arrow:arrows)
-			{
-			if(arrow.isDisplayed()){
-			counter++;
-			List<WebElement> list = driver.findElements(GetPageObject.OR_GetElement(element));
-			int page1_products = list.size();
-			
-//			System.out.println("Value: "+page1_products);
-			arrow.click();
-			int page2_products =list.size();
-			System.out.println("Total products: "+ page1_products +" " + page2_products);
-			
-			}
-			else
-			{List<WebElement> list = driver.findElements(GetPageObject.OR_GetElement(element));
-			int value = list.size();
-//			HashMapContainer.add("$$"+element, value);
-			System.out.println("Value: "+value);
-/*
-			WebElement next = driver.findElement(GetPageObject.OR_GetElement("NextArrow"));
-			list = driver.findElements(GetPageObject.OR_GetElement(element));
-//			HashMapContainer.add("$$"+element, value);
- 
-			System.out.println("Value: "+value);
-
-			
-			File files = null;
-			Integer counter=0;
-			 
-			
-			
-			Thread.sleep(5000);
-			List<WebElement> listImages=driver.findElements(GetPageObject.OR_GetElement("NextArrow"));
-			System.out.println("No. of Images: "+listImages.size());
-			 
-			for(WebElement image:listImages)
-			{
-			if(image.isDisplayed())
-			{
-			counter++;
-			String[] names = image.getAttribute("src").split("/");
-			String name = names[names.length-1];
-			System.out.println(name);
-			URL myURL = new URL(image.getAttribute("src"));
-			files= new File("C:\\downloadedPictures\\"+ System.currentTimeMillis()+ "." +name);
-			org.apache.commons.io.FileUtils.copyURLToFile(myURL, files);
-			}
-			}
-			System.out.println("No. of total displable images: "+counter);
-			
-			
-			
-			
-			wrapFunc.waitForElementPresence(GetPageObject.OR_GetElement(element));
-			WebElement x = driver.findElement(GetPageObject.OR_GetElement(element));
-			if(x.isDisplayed()){
-			List<WebElement> list = driver.findElements(GetPageObject.OR_GetElement(element));
-			int value = list.size();
-			System.out.println("Value: "+value);
-			driver.findElement(GetPageObject.OR_GetElement("NextArrow")).click();
-			list = driver.findElements(GetPageObject.OR_GetElement(element));
-//			HashMapContainer.add("$$"+element, value);
-			System.out.println("Value: "+value);
-			}
-			else
-			{List<WebElement> list = driver.findElements(GetPageObject.OR_GetElement(element));
-			int value = list.size();
-//			HashMapContainer.add("$$"+element, value);
-			System.out.println("Value: "+value);
-	*/		
-			}}
 
 		} catch (Exception e) {
 			e.printStackTrace();
